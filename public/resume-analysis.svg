@@ -1,0 +1,39 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <style>
+    .st0{fill:#EEEEEE;}
+    .st1{fill:#FFFFFF;}
+    .st2{fill:#F5F5F5;}
+    .st3{fill:#4F46E5;}
+    .st4{fill:#6366F1;}
+    .st5{fill:#818CF8;}
+    .st6{fill:#333333;}
+    .st7{fill:#999999;}
+  </style>
+  <rect x="107.5" y="72.9" class="st0" width="220.3" height="282.1"/>
+  <path class="st1" d="M323.4,355H112V72.9h211.5V355z"/>
+  <rect x="129.4" y="103.5" class="st2" width="177.5" height="16.8"/>
+  <rect x="129.4" y="138.4" class="st2" width="177.5" height="8.4"/>
+  <rect x="129.4" y="155.2" class="st2" width="177.5" height="8.4"/>
+  <rect x="129.4" y="172" class="st2" width="177.5" height="8.4"/>
+  <rect x="129.4" y="200.4" class="st2" width="84.3" height="8.4"/>
+  <rect x="129.4" y="217.2" class="st2" width="84.3" height="8.4"/>
+  <rect x="129.4" y="234" class="st2" width="84.3" height="8.4"/>
+  <rect x="222.6" y="200.4" class="st2" width="84.3" height="8.4"/>
+  <rect x="222.6" y="217.2" class="st2" width="84.3" height="8.4"/>
+  <rect x="222.6" y="234" class="st2" width="84.3" height="8.4"/>
+  <rect x="129.4" y="262.5" class="st2" width="177.5" height="8.4"/>
+  <rect x="129.4" y="279.3" class="st2" width="177.5" height="8.4"/>
+  <rect x="129.4" y="296.1" class="st2" width="177.5" height="8.4"/>
+  <path class="st3" d="M393.1,288.3l-10.7-10.7l-31.1,31.1l-14.9-14.9l-10.7,10.7l25.6,25.6L393.1,288.3z"/>
+  <path class="st4" d="M397.5,218.9c0,26.6-21.6,48.2-48.2,48.2s-48.2-21.6-48.2-48.2s21.6-48.2,48.2-48.2S397.5,192.3,397.5,218.9z"/>
+  <path class="st5" d="M368,192.3l-18.6,18.6l-11.2-11.2l-13.1,13.1l24.2,24.2l31.7-31.7L368,192.3z"/>
+  <circle class="st4" cx="241.9" cy="347.8" r="80.1"/>
+  <g>
+    <path class="st6" d="M242.5,376.7c-1.6,0-2.9-1.3-2.9-2.9v-52.1c0-1.6,1.3-2.9,2.9-2.9s2.9,1.3,2.9,2.9v52.1C245.4,375.4,244.1,376.7,242.5,376.7z"/>
+    <path class="st6" d="M268.5,350.7h-52.1c-1.6,0-2.9-1.3-2.9-2.9c0-1.6,1.3-2.9,2.9-2.9h52.1c1.6,0,2.9,1.3,2.9,2.9C271.4,349.4,270.1,350.7,268.5,350.7z"/>
+  </g>
+  <rect x="175.8" y="242.4" class="st7" width="8.4" height="8.4"/>
+  <rect x="190.8" y="242.4" class="st7" width="8.4" height="8.4"/>
+  <rect x="205.1" y="242.4" class="st7" width="8.4" height="8.4"/>
+</svg>
