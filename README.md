@@ -1,73 +1,50 @@
-# Welcome to your Lovable project
+## AI RESUME TO JOB MATCH
 
-## Project info
+🚨 This project is designed to match resumes to job descriptions using AI technologies. It involves collecting user data, parsing resumes, storing details in a vector database, and using a Retrieval-Augmented Generation (RAG) approach to find the most similar resumes based on job descriptions
 
-**URL**: https://lovable.dev/projects/f7984ecf-0cbc-4c79-bab5-4c02686a5999
+## Features
 
-## How can I edit this code?
+1. **User Data Collection**: A basic form is created to collect user data along with their resumes.
+2. **Resume Parsing**: Utilizes PDF parsing to extract text from resumes.
+3. **Vector Database**: A Weaviate vector database is used to store user details.
+4. **Resume Matching**: Implements a RAG approach to match resumes with job descriptions and generate enhanced responses using a Language Model (LLM).
 
-There are several ways of editing your application.
+## HOW TO RUN THE APP
 
-**Use Lovable**
+N.B: CREATE A .ENV FILE IN THE ROOT DIRECTORY AND ADD THE FOLLOWING:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f7984ecf-0cbc-4c79-bab5-4c02686a5999) and start prompting.
+WEAVIATE_CLOUD_URL=
+WEAVIATE_API_KEY=
+GEMINI_API_KEY=(not used in the project) optional
+COHERE_API_KEY=
 
-Changes made via Lovable will be committed automatically to this repo.
+## Steps
 
-**Use your preferred IDE**
+1. **Install Dependencies**: Run the following command to install the necessary dependencies:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+```bash
+npm install
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## POSTMAN ROUTE CHECK
 
-Follow these steps:
+[1]#use this route to send job description in the following format:
+👉 http://localhost:3000/api/search POST
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+{
+ "jobDescription": "I need a React.js developer who knows Docker. Experience: 2 years minimum."
+}
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+[2]#use this route to send user details to the vector db in the following format:
+👉 http://localhost:3000/api/resume-parser POST
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+{
+ "name": "Jane Doe",
+ "email": "jane.doe@example.com",
+ "linkedin": "https://www.linkedin.com/in/janedoe",
+ "skills": ["React.js","Docker", "JavaScript", "Node.js", "CSS" ],
+ "experience": "3 years as a Frontend Developer",
+ "education": "Bachelor of Science in Computer Science",
+}
+OR
+👉 fill the form and submit to send data to this route.
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/f7984ecf-0cbc-4c79-bab5-4c02686a5999) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
